@@ -35,7 +35,7 @@ public class ProjetoResource {
 	public String adiciona(String conteudo) {
 		Projeto projeto = (Projeto) new XStream().fromXML(conteudo);
 		new ProjetoDAO().adiciona(projeto);
-		return "<status>Sucesso</status>";
+		return "<status>sucesso</status>";
 	}
 
 }

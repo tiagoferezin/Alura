@@ -30,7 +30,7 @@ public class Servidor {
 		System.out.println("Servidor Rodando!!!");
 		System.in.read();
 
-		pararSerivdor(server);
+		server.stop();
 		
 	}
 
@@ -42,11 +42,6 @@ public class Servidor {
 				config);
 
 		return server;
-	}
-
-	static void pararSerivdor(HttpServer server) {
-		server.stop();
-		System.out.println("Servidor Parado");
 	}
 
 }
